@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition</title>
+</head>
+<body>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <script>
+        //only if
+        //it will not print if there are more then 18 hour.
+        if (new Date().getHours() < 18) {
+          document.getElementById("one").innerHTML = "It is day!";
+        }
+        //if and else
+        const hour = new Date().getHours(); 
+        let statment;
+        if (hour < 18)
+        {
+            statment = "Good day...! Babe..!";
+        } 
+        else 
+        {
+            statment = "Good evening...! Babe..!";
+        }
+        document.getElementById("two").innerHTML = statment;
+        //If else if
+        const hours = new Date().getHours();
+        let lines;
+        if(hours<10){
+            lines="It is Morning Time";
+        }
+        else if(hours<20){
+            lines="It is Afternoon Time";
+        }
+        else{
+            lines="It is Night...Have a good night...Babe..!";
+        }
+        document.getElementById("three").innerHTML = lines;
+        </script>
+</body>
+</html>

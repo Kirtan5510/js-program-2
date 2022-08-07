@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion</title>
+</head>
+<body>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="third"></p>
+    <p id="four"></p>
+    <p id="five"></p>
+    <p id="six"></p>
+    <p id="seven"></p>
+
+        <script>
+            let a = 55;
+            let b = "aditya";
+            c = +b; //it will store that value in number only.
+            d = 30; 
+            e = 12;
+            f = new Date();
+            g = 90;
+            h = "kirtan"
+            i = "_patel"
+            //type
+            document.getElementById("one").innerHTML = typeof a + "<br>" + typeof b + "<br>" + typeof c
+            //String
+            document.getElementById("two").innerHTML = String(d) + "<br>" + String(a+d) + "<br>" + String(d-e);
+            // .toString will give same output as String.
+            document.getElementById("third").innerHTML = a.toString();
+            //Dates to Number
+            document.getElementById("four").innerHTML = f.getTime();
+            //Booleans to Numbers
+            //we write flase/true in Number then output will 0/1 and we'll write flase/true in String then output will be as spelling.
+            document.getElementById("five").innerHTML = Number(false) + "<br>" + String(true);
+            //String Conversion
+            document.getElementById("seven").innerHTML = String(h + i); 
+        </script>
+</body>
+</html>

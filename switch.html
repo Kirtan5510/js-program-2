@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <script>
+        //0 to 6 is sunday to monday
+        let day;
+        switch (new Date().getDay()) 
+        {
+            case 0:
+                day = "Sunday";
+            break;
+            case 1:
+                day = "Monday";
+            break;
+            case 2:
+                day = "Tuesday";
+            break;
+            case 3:
+                day = "Wednesday";
+            break;
+            case 4:
+                day = "Thursday";
+            break;
+            case 5:
+                day = "Friday";
+            break;
+            case  6:
+                day = "Saturday";
+        }
+        document.getElementById("one").innerHTML = "Today is " + day;
+        //using break and default
+        let text;
+            switch (new Date().getDay()) 
+        {
+            case 1:
+                text = "Today is Monday";
+            break;
+            case 2:
+                text = "Today is Tuesday";
+            case 3:
+                text = "Today is Wednesday"
+            case 4:
+                text = "Today is Thursday";
+            break;
+            case 5:
+                text = "Today is Friday";
+            break;
+            default:
+                text = "You are in weekend";
+        }
+        document.getElementById("two").innerHTML = text;
+        //common lines
+        let line;
+            switch (new Date().getDay()) 
+        {
+            case 4:
+            case 5:
+                line = "Soon it is Weekend";
+            break;
+            case 0:
+            case 6:
+                line = "It is Weekend";
+            break;
+            default:
+                line = "Looking forward to the Weekend";
+        }
+        document.getElementById("three").innerHTML = line;
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <p id="four"></p>
+    <p id="five"></p>
+    <p id="six"></p>
+    <b>kirtan's Special :- <Br></Br></b>
+    <input type="button" value="sum it" onclick="sum()"/>
+    <script>
+        let a = 5;
+        let b = 2;
+        let c = a + b;
+        let d = 4;
+        let e = 10;
+        let f = " kirtan";
+        let g = "patel";
+        let h = "kevin ";
+        h += "prajapati "
+        //Addition
+        document.getElementById("one").innerHTML = "a is&nbsp" + a + "<br>" + "b is&nbsp" + b + "<br>" + "Addition of a and b is c so answer is&nbsp<b>" +c;
+        //Multiplication
+        document.getElementById("two").innerHTML = d*d + "<br>" + a*b*d;
+        //division
+        document.getElementById("three").innerHTML = e/a + "<br>" + e/b;
+        //String Operators
+        document.getElementById("four").innerHTML = f +" "+g;
+        //+=
+        document.getElementById("five").innerHTML = h;
+        //Adding Strings and Numbers
+        document.getElementById("six").innerHTML = d+f + "<br>" + h+e;
+        //special
+        function sum(){
+				i = parseInt(prompt("enter value one"));
+                j = parseInt(prompt("enter value two"));
+                alert (i+j);
+			}
+    </script>
+</body>
+</html>
